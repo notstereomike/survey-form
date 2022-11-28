@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">This is a survey form, you put stuff in and submit it and stuff</p>
+
+<form id="survey-form">
+  <fieldset>
+    <label id="name-label" for="name">Name <input id="name" type="text" required placeholder="The sound people make when trying to get your attention">
+    <label id="email-label" for="email">Email <input id="email" type="email" required placeholder="Enter your email address please">
+    <label id="number-label" for="number">Favourite Number <input id="number" type="number" min="1" max="151" placeholder="Enter a number between 1 and 151">
+  </fieldset>
+
+  <fieldset>
+    <label for="dropdown">How do you get 100 Pikachu on a bus?
+    <select id="dropdown">
+      <option value="">Select One</option>
+      <option value="pokemon">Pokemon</option>
+      <option value="ask">Ask them nicely</option>
+    </select>
+    <br><br>
+    Whats your favourite starter?
+    <br>
+    <label for="bulbasaur"><input id="bulbasaur" type="radio" name="starter" class="inline" value="bulbasaur"/>Bulbasaur</label>
+  
+    <label for="charmander"><input id="charmander" type="radio" name="starter" class="inline" value="charmander" />Charmander</label>
+
+    <label for="squirtle"><input id="squirtle" type="radio" name="starter" class="inline" value="squirtle" />Squirtle</label>
+  
+     <label for="garlic-bread"><input id="garlic-bread" type="radio" name="starter" class="inline" value="garlic-bread"/>Garlic Bread</label>
+  
+  
+  </fieldset>
+  <fieldset>
+  You can check these boxes but that don't really do anything...
+  <div class="checkboxes">
+  <label for="check1">I<input id="check1" value="1" type="checkbox" class="inline">
+  <label for="check2">Like<input id="check2" value="2" type="checkbox" class="inline">
+  <label for="check3">Big<input id="check3" value="3" type="checkbox" class="inline">
+  <label for="check4">Butts<input id="check4" value="4" type="checkbox" class="inline">
+  <label for="check5">And<input id="check5" value="5" type="checkbox" class="inline">
+  <label for="check6">I<input id="check6" value="6" type="checkbox" class="inline">
+  <label for="check7">Cannot<input id="check7" value="7" type="checkbox" class="inline">
+  <label for="check8">Lie<input id="check8" value="8" type="checkbox" class="inline">
+  </div>
+  <br>
+  <label for="lyrics">Enter the rest of the lyrics
+    <textarea id="lyrics" rows="5" cols="30" placeholder="I like big butts and i cannot lie..."></textarea>
+      
+  </fieldset>
+    <input id="submit" type="submit" value="submit"/>
+
+</form>
+</body>
+
